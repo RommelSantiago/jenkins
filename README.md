@@ -1,4 +1,6 @@
 # jenkins local installation
+This is a way to install docker locally. The advantage is that you can recreate the container whenever you need.
+
 1. Install docker compose
 2. copy/clone the code to your own repo
 3. Make sure you have a jenkins_home directory
@@ -9,3 +11,9 @@
    $docker exec -ti jenkins bash (not working in windows :(... )
 6. Install recommended plugins
 7. Start writtin your first jobs
+
+To stop/start the service run:
+$ docker-compose start/stop
+
+To delete the service run:
+$ docker-compose down
