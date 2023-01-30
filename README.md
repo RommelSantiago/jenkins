@@ -1,5 +1,6 @@
 # jenkins local installation
 This is a way to install docker locally. The advantage is that you can recreate the container whenever you need.
+Note: These directions were tested in a windows machine
 
 1. Install docker compose
 2. copy/clone the code to your own repo
