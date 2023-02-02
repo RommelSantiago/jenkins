@@ -9,7 +9,8 @@ Note: These directions were tested in a windows machine
 5. Go to localhost:8080 and Configure jenkins first admin user
    The password is located at your volume ($PWD/jenkins_home/secrets)
    Alternatively go into the container in the path shown in the config panel (localhost:8080)
-   $docker exec -ti jenkins bash (not working in windows :(... )
+   $docker exec -ti jenkins bash 
+   in windows run $ winpty docker exec -ti jenkins bash
 6. Install recommended plugins
 7. Start writtin your first jobs
 
@@ -18,3 +19,10 @@ $ docker-compose start/stop
 
 To delete the service run:
 $ docker-compose down
+
+## AWS integration
+To get the AWS CLI, get into the container and run:
+\# curl -o awscliv2.zip https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
+\#  unzip -o awscliv2.zip
+\#  ./aws/install
+Note the prompt indicates root user as indicated in yml file.
