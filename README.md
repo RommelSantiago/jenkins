@@ -23,8 +23,8 @@ $ docker-compose down
 ## AWS integration
 To get the AWS CLI, get into the container and run:
 ```
-\# curl -o awscliv2.zip https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
-\#  unzip -o awscliv2.zip
-\#  ./aws/install
+# curl -o awscliv2.zip https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
+#  unzip -o awscliv2.zip
+#  ./aws/install
 ```
 Note the prompt indicates root user as indicated in yml file.
